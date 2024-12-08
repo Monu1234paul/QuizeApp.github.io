@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-box">
+            <h1>Simple Quiz</h1>
+            
+            <!-- Quiz Questions Section -->
+            <div class="quiz-section">
+                <div class="question-number">Question <span id="current-question">1</span> of 5</div>
+                <div id="question-text"></div>
+                <div id="options"></div>
+                <div id="message"></div>
+            </div>
+
+            <!-- Buttons -->
+            <button id="next-btn">Next Question</button>
+            
+            <!-- Results Section -->
+            <div id="results" class="hide">
+                <h2>Quiz Complete!</h2>
+                <p>Your Score: <span id="score">0</span>/5</p>
+                <button id="restart-btn">Try Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
